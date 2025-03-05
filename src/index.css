@@ -5,9 +5,69 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  direction: rtl;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* תמיכה בכיוון RTL */
+html {
+  direction: rtl;
+}
+
+/* עיצוב כללי */
+* {
+  box-sizing: border-box;
+}
+
+/* עיצוב לתצוגה מקדימה של הודעות */
+.message-preview {
+  white-space: pre-line;
+  background-color: #e6f7e9;
+  border-radius: 8px;
+  padding: 10px;
+  border-left: 4px solid #25D366;
+}
+
+/* עיצוב לכפתורים */
+.MuiButton-root {
+  font-weight: bold !important;
+}
+
+/* עיצוב לטבלאות */
+.MuiTableCell-head {
+  font-weight: bold !important;
+  background-color: #f5f5f5;
+}
+
+/* עיצוב לתיבות טקסט */
+.MuiTextField-root textarea {
+  direction: rtl;
+  text-align: right;
+}
+
+/* עיצוב לתוויות */
+.MuiInputLabel-root {
+  right: 1.75rem !important;
+  left: auto !important;
+  transform-origin: right !important;
+}
+
+/* עיצוב לתוויות בפוקוס */
+.MuiInputLabel-shrink {
+  transform-origin: right !important;
+}
+
+/* עיצוב לתיבות בחירה */
+.MuiSelect-select {
+  padding-right: 1rem !important;
+}
+
+/* עיצוב לאייקונים בתיבות בחירה */
+.MuiSelect-icon {
+  right: auto !important;
+  left: 7px !important;
 }
